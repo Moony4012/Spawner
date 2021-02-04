@@ -2,16 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Jhin : Heros
+ class Jhin : Heros
 {
 
-    public Jhin(string name): base(name)
+    public Jhin() : base()
     {
-        Debug.Log("Création name" + name);
-    }
-   
-    public override void Attake()
-    {
-        Debug.Log("Curtain Call");
+        StructInfo = new StatCharacter("Shan", 100, 50, 200);
     }
 }

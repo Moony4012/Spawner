@@ -2,19 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Heros : MonoBehaviour
+class Heros : Character
 {
-    protected string _name;
-    public Heros (string name)
+    
+
+    public Heros(): base()
     {
-        _name = name;
-        Debug.Log("Création name" + name);
+       
 
     }
     
-    public virtual void Attake()
-    {
-        Debug.Log("No Attake Detected");
-    }
-
+   
 }

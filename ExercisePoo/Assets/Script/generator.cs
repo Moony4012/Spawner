@@ -8,13 +8,13 @@ public class generator  : MonoBehaviour
     public List<GameObject> Jhin;
     public List<GameObject> He_Man;
 
-    private void Update()
+   void Update()
     {
-       
+        generatHeros(); 
     }
 
    
-    void generatHeros() 
+   private void generatHeros() 
     {
         GameObject Brunos = GetRandomHeros(Bruno);
         Instantiate(Brunos, Vector2.zero, Quaternion.identity);

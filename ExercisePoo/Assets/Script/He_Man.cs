@@ -2,14 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class He_Man : Heros
+ class He_Man : Heros
 {
-    public He_Man(string name) : base(name)
+    public He_Man(): base()
     {
-        Debug.Log("Création name" + name);
-    }
-    public override void Attake()
-    {
-        Debug.Log("Wat");
+        StructInfo = new StatCharacter("Wat", 100, 50, 200);
     }
 }
